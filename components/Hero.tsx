@@ -56,22 +56,22 @@ export function Hero() {
         aria-hidden
       />
 
-      <div className="relative mx-auto max-w-6xl px-4 py-14 sm:py-16 lg:grid lg:grid-cols-2 lg:items-center lg:gap-12 lg:py-20">
+      <div className="relative mx-auto max-w-6xl px-4 py-12 sm:py-14 lg:grid lg:grid-cols-2 lg:items-center lg:gap-12 lg:py-16">
         {/* Left: copy + CTAs */}
         <div className="relative z-10">
           <p className="inline-flex items-center rounded-full border border-gold/35 bg-white/[0.08] px-3.5 py-1 text-[0.65rem] font-semibold uppercase leading-none tracking-[0.16em] text-gold backdrop-blur-sm sm:px-4 sm:py-1.5 sm:text-[0.7rem] sm:tracking-[0.2em]">
             {business.heroBadge}
           </p>
 
-          <h1 className="mt-5 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-[2.75rem] lg:leading-tight">
+          <h1 className="mt-3 max-w-xs text-3xl font-bold leading-[1.05] tracking-tight text-white sm:mt-4 sm:max-w-md sm:text-4xl lg:max-w-lg lg:text-[2.125rem]">
             {business.heroHeadline}
           </h1>
 
-          <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/85">
+          <p className="mt-3 max-w-md text-base leading-snug text-white/85 sm:max-w-lg">
             {business.heroSubheadline}
           </p>
 
-          <p className="mt-4 inline-flex items-center gap-1.5 rounded-full border border-gold/30 bg-white/[0.08] px-3 py-1.5 text-xs font-medium text-white/85 backdrop-blur-sm">
+          <p className="mt-3 inline-flex items-center gap-1.5 rounded-full border border-gold/30 bg-white/[0.08] px-3 py-1.5 text-xs font-medium text-white/85 backdrop-blur-sm">
             <span
               className="h-1.5 w-1.5 shrink-0 rounded-full bg-gold ring-1 ring-white/25"
               aria-hidden
@@ -79,7 +79,7 @@ export function Hero() {
             {business.holtzman.heroFuelBadge}
           </p>
 
-          <div className="mt-8 flex w-full max-w-md flex-col gap-2.5 lg:max-w-lg">
+          <div className="mt-6 flex w-full max-w-md flex-col gap-2.5 lg:max-w-lg">
             <Button
               href={business.links.doordash}
               external

@@ -4,9 +4,9 @@ export const business = {
   tagline:
     "Fuel up, grab hot breakfast, order lunch, and get back on the road fast.",
   heroBadge: "LOCAL FUEL • HOT DELI • ELKTON, VA",
-  heroHeadline: "Fuel, Hot Food, and Everyday Essentials in Elkton",
+  heroHeadline: "Fuel, Food & Essentials in Elkton",
   heroSubheadline:
-    "Stop by Liberty Gas & Deli for gas, breakfast, lunch, snacks, and quick service right here on 7th Street.",
+    "Stop by Liberty Gas & Deli for gas, hot deli food, snacks, and quick service on 7th Street.",
   address: {
     street: "607 7th St",
     city: "Elkton",
