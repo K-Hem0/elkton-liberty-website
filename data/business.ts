@@ -41,8 +41,6 @@ export const business = {
   holtzman: {
     heroFuelBadge: "Holtzman-supplied fuel",
     supplierLine: "Fuel supplied by Holtzman",
-    fuelCardValue:
-      "Quality fuel supplied by Holtzman, available for everyday drivers, commuters, and travelers.",
     patrioticTitle: "Proudly Serving Elkton Drivers",
     patrioticText:
       "Stop in for reliable fuel supplied by Holtzman, hot deli food, snacks, and everyday essentials right here in Elkton.",
@@ -51,13 +49,27 @@ export const business = {
     fallbackBadge: "Holtzman Fuel Supplier",
   },
   infoStrip: [
-    { label: "Fuel", value: "Gas & diesel, open 24/7" },
-    { label: "Deli", value: "Hot breakfast & made-to-order lunch" },
+    {
+      label: "Fuel",
+      text: "Holtzman-supplied fuel for everyday drivers, commuters, and travelers.",
+      badge: "Holtzman supplied",
+    },
+    {
+      label: "Deli",
+      text: "Hot breakfast, lunch plates, fried chicken, pizza, and quick counter favorites.",
+      badge: "Breakfast & lunch",
+    },
     {
       label: "Hours",
-      value: "Monday–Friday: 5 AM–10 PM\nSaturday–Sunday: 6 AM–10 PM",
+      text: "Monday–Friday: 5 AM–10 PM. Saturday–Sunday: 6 AM–10 PM.",
+      badge: "Open daily",
     },
-    { label: "Location", value: "607 7th St, Elkton, VA" },
+    {
+      label: "Location",
+      text: "Find us at 607 7th St in Elkton, Virginia, right off your daily route.",
+      badge: "Get directions",
+      badgeHref: "directions" as const,
+    },
   ],
   parking: "Easy in-and-out access right on 7th Street.",
 } as const;
