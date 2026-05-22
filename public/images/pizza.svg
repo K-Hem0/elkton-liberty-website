@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Pizza placeholder">
+  <rect width="640" height="400" fill="#f7f3eb"/>
+  <path d="M320 80 L520 300 L120 300 Z" fill="#c9a227" opacity="0.5"/>
+  <circle cx="280" cy="220" r="18" fill="#c41e3a"/>
+  <circle cx="360" cy="200" r="18" fill="#c41e3a"/>
+  <circle cx="320" cy="260" r="18" fill="#c41e3a"/>
+  <text x="320" y="350" text-anchor="middle" fill="#0f2744" font-family="system-ui,sans-serif" font-size="24" font-weight="700">Pizza</text>
+  <text x="320" y="378" text-anchor="middle" fill="#0f2744" font-family="system-ui,sans-serif" font-size="14" opacity="0.7">Photo placeholder</text>
+</svg>
