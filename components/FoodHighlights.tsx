@@ -25,12 +25,18 @@ export function FoodHighlights() {
             >
               <div className="border-t-4 border-gold transition-colors duration-200 group-hover:border-brand-red" />
               <div className="relative aspect-[16/10] bg-navy/5">
-                {/* TODO: Replace placeholder with a real photo of {item.title} */}
                 <Image
                   src={item.image}
                   alt={item.imageAlt}
                   fill
+                  loading={"eager" in item && item.eager ? "eager" : undefined}
                   className="object-cover transition-transform duration-200 group-hover:scale-[1.02]"
+                  style={{
+                    objectPosition:
+                      "imagePosition" in item
+                        ? item.imagePosition
+                        : "center center",
+                  }}
                   sizes="(max-width: 640px) 100vw, 50vw"
                 />
               </div>

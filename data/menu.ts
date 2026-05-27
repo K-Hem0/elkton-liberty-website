@@ -83,32 +83,38 @@ export const highlights = [
     title: "Breakfast",
     description:
       "Egg & cheese sandwiches, tenderloin, baloney, and sausage gravy biscuits made hot every morning.",
-    image: "/images/breakfast.svg",
-    imageAlt: "Breakfast sandwich and biscuit",
+    image: "/images/breakfast-sandwich.jpg",
+    imageAlt:
+      "Bacon, egg, and cheese biscuit sandwich with tomato and lettuce on a plate",
     href: "/menu#breakfast",
   },
   {
     title: "Lunch",
     description:
       "BBQ pulled pork, cheeseburgers, spaghetti, fried rice, chili plates, hot dogs, wedges, and combos.",
-    image: "/images/burger.svg",
-    imageAlt: "Burger and sandwich",
+    image: "/images/burger-sandwich.jpg",
+    imageAlt: "Double cheeseburger with melted cheese and pickles on a toasted bun",
+    imagePosition: "center 45%",
     href: "/menu#lunch",
   },
   {
     title: "Fried Chicken",
     description:
       "Crispy fried chicken by the piece — breast, thigh, leg, and wings ready when you are.",
-    image: "/images/snacks.svg",
-    imageAlt: "Fried chicken",
+    image: "/images/fried-chicken.jpg",
+    imageAlt:
+      "Golden fried chicken being seasoned fresh in the deli kitchen",
+    imagePosition: "center 65%",
+    eager: true,
     href: "/menu#fried-chicken",
   },
   {
     title: "Pizza",
     description:
       "Hot pizza slices — perfect for a quick lunch or afternoon bite.",
-    image: "/images/pizza.svg",
-    imageAlt: "Pizza slice",
+    image: "/images/pizza-slice.jpg",
+    imageAlt:
+      "BBQ chicken pizza with pineapple, red onion, and cilantro on a wooden board",
     href: "/menu#pizza",
   },
 ] as const;
