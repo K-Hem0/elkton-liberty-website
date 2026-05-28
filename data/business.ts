@@ -14,7 +14,7 @@ export const business = {
     zip: "22827",
     full: "607 7th St, Elkton, VA 22827",
   },
-  phone: "(540) 298-1234",
+  phone: "(540) 298 - 0340",
   email: "info@libertygaselkton.com",
   hours: {
     fuel: "Open 24 hours",

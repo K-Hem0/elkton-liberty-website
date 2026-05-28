@@ -1,11 +1,10 @@
-import fs from "fs";
-import path from "path";
 import Image from "next/image";
 import { Button } from "@/components/Button";
 import { business } from "@/data/business";
 
-const HERO_IMAGE_JPG = "/images/station-exterior.jpg";
-const HERO_IMAGE_FALLBACK = "/images/hero.svg";
+const HERO_IMAGE = "/images/liberty-storefront.jpg";
+const HERO_IMAGE_ALT =
+  "Liberty Gas and Deli storefront and fuel canopy in Elkton, Virginia";
 
 const floatingBadges = [
   { label: "Open Daily", position: "right-0 top-4 sm:-right-3 sm:top-6" },
@@ -13,21 +12,7 @@ const floatingBadges = [
   { label: "Fuel + Deli", position: "left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 sm:top-2" },
 ] as const;
 
-function getHeroImageSrc(): { src: string; usePhoto: boolean } {
-  const photoPath = path.join(
-    process.cwd(),
-    "public",
-    "images",
-    "station-exterior.jpg",
-  );
-  if (fs.existsSync(photoPath)) {
-    return { src: HERO_IMAGE_JPG, usePhoto: true };
-  }
-  return { src: HERO_IMAGE_FALLBACK, usePhoto: false };
-}
-
 export function Hero() {
-  const { src: heroImageSrc, usePhoto } = getHeroImageSrc();
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-navy-dark via-navy to-[#163a5f]">
@@ -119,12 +104,11 @@ export function Hero() {
 
             <div className="relative overflow-hidden rounded-2xl border border-white/15 bg-navy-dark/50 shadow-2xl shadow-black/40 ring-1 ring-white/10">
               <div className="relative aspect-[4/3] sm:aspect-[5/4] lg:aspect-[4/5] xl:aspect-[4/3]">
-                {/* TODO: Add public/images/station-exterior.jpg — auto-used when the file exists */}
                 <Image
-                  src={heroImageSrc}
-                  alt="Liberty Gas and Deli station exterior in Elkton, Virginia"
+                  src={HERO_IMAGE}
+                  alt={HERO_IMAGE_ALT}
                   fill
-                  className="object-cover"
+                  className="object-cover object-[center_28%]"
                   priority
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
