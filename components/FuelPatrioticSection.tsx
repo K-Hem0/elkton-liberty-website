@@ -45,7 +45,7 @@ export function FuelPatrioticSection() {
                   className="h-1.5 w-1.5 shrink-0 rounded-full bg-gold"
                   aria-hidden
                 />
-                {business.holtzman.supplierLine}
+                {business.holtzman.patrioticBullet}
               </p>
             </div>
             <div className="flex shrink-0 items-center justify-start lg:justify-end">

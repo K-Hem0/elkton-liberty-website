@@ -43,7 +43,8 @@ export const business = {
     supplierLine: "Fuel supplied by Holtzman",
     patrioticTitle: "Proudly Serving Elkton Drivers",
     patrioticText:
-      "Stop in for reliable fuel supplied by Holtzman, hot deli food, snacks, and everyday essentials right here in Elkton.",
+      "Stop in for reliable Holtzman-supplied fuel, including non-ethanol gas, plus hot deli food, snacks, and everyday essentials right here in Elkton.",
+    patrioticBullet: "Holtzman-supplied fuel • Non-ethanol available",
     logoPath: "/images/holtzman-logo.png",
     logoAlt: "Holtzman fuel supplier",
     fallbackBadge: "Holtzman Fuel Supplier",
@@ -51,7 +52,7 @@ export const business = {
   infoStrip: [
     {
       label: "Fuel",
-      text: "Holtzman-supplied fuel for everyday drivers, commuters, and travelers.",
+      text: "Holtzman-supplied fuel, including non-ethanol gas, for everyday drivers, commuters, and travelers.",
       badge: "Holtzman supplied",
     },
     {
